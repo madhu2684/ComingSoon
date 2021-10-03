@@ -1,0 +1,42 @@
+    #breathing {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      -webkit-animation: breathing 8s ease-out infinite normal;
+      animation: breathing 8s ease-out infinite normal;
+      background: #5885cb;
+    }
+    @-webkit-keyframes breathing {
+      0% {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+      }
+      50% {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+      }
+      100% {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+      }
+    }
+    @keyframes breathing {
+      0% {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+      }
+      50% {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+      }
+      100% {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+      }
+    }
