@@ -9,10 +9,13 @@ const intvl = setInterval(() => {
   const hours = Math.floor(
     (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
   );
-
+  const mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
   countdown.innerHTML = `
         <div>${days}<span>Days</span></div>
         <div>${hours}<span>Hours</span></div>
+        <div>${mins}<span>Minutes</span></div>
+        <div>${seconds}<span>Seconds</span></div>
   `;
 
   if (distance < 0) {
